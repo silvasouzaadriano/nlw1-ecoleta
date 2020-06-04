@@ -84,7 +84,41 @@
   background: #2FB86E;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1270px) {
+
+  #page-home {
+    
+    background-position-x: 120%;
+  }
+}
+
+
+
+@media(max-width: 1100px) {
+
+  #page-home {
+    
+    background-position-x: 130%;
+  }
+}
+
+@media(max-width: 1040px) {
+
+  #page-home {
+    
+    background-position-x: 128%;
+  }
+}
+
+
+@media(max-width: 990px) {
+
+  #page-home {
+    height: 150vh;
+    background-position-x: 70%;
+    background-position-y: 20vh;
+    background-size: 700px;
+  }
 
   #page-home .content {
     align-items: center;
@@ -96,6 +130,7 @@
   }
 
   #page-home .content main {
+    margin-top: 80vh;
     align-items: center;
   }
 
