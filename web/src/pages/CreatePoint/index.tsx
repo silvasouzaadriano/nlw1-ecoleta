@@ -5,6 +5,8 @@ import { Map, TileLayer, Marker } from 'react-leaflet';
 import axios from 'axios';
 import { LeafletMouseEvent } from 'leaflet';
 
+import { toast } from 'react-toastify';
+
 import api from '../../services/api';
 
 import './styles.css';
@@ -132,13 +134,25 @@ const CreatePoint = () => {
       items
     };
 
-    await api.post('points', data);
+    if ((name === "" || email === "" || whatsapp === "") ||
+      (latitude === 0 && longitude === 0) ||
+      (uf === "0" || city === "0") ||
+      (items.length === 0))
+    {
+      toast.error("Todos os campos são obrigatórios");
+    } else {
+      await api.post('points', data);
 
-    alert('Ponto de Coleta Criado');
+      toast.info("Ponto de Coleta Criado Com Sucesso!", {
+        onClose: () => history.push('/')
+      });
 
-    history.push('/');
-
+    }
+    
+   
   };
+
+  
   
   return (
     <div id="page-create-point">
@@ -203,7 +217,7 @@ const CreatePoint = () => {
               attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker position={selectedPosition.includes(0) ? initialPosition : selectedPosition} />
+            <Marker position={selectedPosition} />
 
           </Map>
 
