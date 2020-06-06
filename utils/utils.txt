@@ -1,0 +1,33 @@
+Back-end
+
+Front-end
+
+Mobile
+
+npm install -g expo-cli
+
+expo init <nome da aplicação> - Criar aplicação
+
+Escolher opção Black com TypeScript
+
+npm start  - inicializa o expo
+
+Para abrir a aplicação
+
+1) Instale o aplicativo Expo no celular
+
+2) Scaneie o Qrcode
+
+Alternativa para quem um computador ruim: https://snack.expo.io/
+
+guia para issues no Expo: https://github.com/Rocketseat/expo-common-issues
+
+libraries extras:
+
+expo install expo-font @expo-google-fonts/ubuntu @expo-google-fonts/roboto
+
+npm install @react-navigation/native
+
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+npm install @react-navigation/stack 
