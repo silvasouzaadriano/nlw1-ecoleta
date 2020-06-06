@@ -38,4 +38,12 @@ expo install expo-constants
 
 expo install react-native-svg
 
+npm install axios
+
+expo install expo-location
+
+expo install expo-mail-composer
+
 Lembrar de trocar na lista de Items(server) o IP para o mesmo do expo
+
+No emulador tem que ativar a localização (normalmente no debug) e informar a localização inicial
