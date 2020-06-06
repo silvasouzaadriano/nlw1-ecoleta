@@ -47,3 +47,5 @@ expo install expo-mail-composer
 Lembrar de trocar na lista de Items(server) o IP para o mesmo do expo
 
 No emulador tem que ativar a localização (normalmente no debug) e informar a localização inicial
+
+Dica para colocar dropdown list no react native: https://github.com/lawnstarter/react-native-picker-select
