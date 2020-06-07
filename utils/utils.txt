@@ -1,5 +1,7 @@
 Back-end
 
+Existem bibliotecas para Serialização e API transform
+
 Front-end
 
 Mobile
