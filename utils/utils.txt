@@ -1,8 +1,35 @@
 Back-end
 
-Existem bibliotecas para Serialização e API transform
+Biblioteca TypeScript (como dependência de desenvolvimento)
+- npm install typescript -D
+
+Depois precisa crirar o arquivo de configuração do typescript
+- npx tsc --init (esse comando criará na raíz do projeto o arquivo: tsconfing.json)
+
+Para executar o node com typescript é necessário instalar a biblioteca ts-node como dependência de desenvolvimento
+- npm install ts-node -D
+
+Para que o node tenha autoreload o pacote ts-node-dev deve ser instalado como dependência de desenvolvimento
+- npm install ts-node-dev -D
+
+Depois crie no package.json, seção scripts, um atalho para executar o comando de inicialização da aplicação:
+- "dev": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts",
+
+Com o atalho criado, para executar a aplicação com autoreload, base usar o comando:
+- npm run dev
+
+
+Comando para executar o node
+-npx ts-node <node do arquivo principal>
+
+* Lembre-se sempre de instalar as bibliotecas e executar o projeto na mesma versão.
+* Existem bibliotecas para Serialização e API transform
 
 Front-end
+
+Comando para criar um projeto com typescript:
+
+yarn create react-app web --template=typescript
 
 Mobile
 
